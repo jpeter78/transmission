@@ -39,6 +39,7 @@ server {
    }
 }
 ```
+
 4. 设置密码验证
 ```
 htpasswd -c /etc/nginx/conf.d/.htpasswd UserName #自己用户名，然后输入密码
@@ -47,12 +48,11 @@ htpasswd -c /etc/nginx/conf.d/.htpasswd UserName #自己用户名，然后输入
 ```
 
 5. 安装transmission
-停止transmission服务，并配置，配置文件是在/var/lib/transmission-daemon/info/settings.js```
-```
+停止transmission服务，并配置，配置文件是在/var/lib/transmission-daemon/info/settings.js
 ```
 wget --no-check-certificate https://download.laobuluo.com/tools/debian-transmission.sh
 sh debian-transmission.sh
-# # 一路回车，到设置用户名和密码，设置好以后，开始安装。默认端口是1989
+# 一路回车，到设置用户名和密码，设置好以后，开始安装。默认端口是1989
 ```
 6. 配置transmission
 停止transmission服务，并配置，配置文件是在/var/lib/transmission-daemon/info/settings.json
